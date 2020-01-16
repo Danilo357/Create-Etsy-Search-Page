@@ -64,7 +64,7 @@
             <p class="results"> > "whiskey" (73,318 results)</p></p>
             <form>
             <input class="relevancy" list="browsers" name="sorting" placeholder="Sortby:Relevancy">
-            <!-- <datalist id="browsers"> -->
+            <datalist id="browsers">
               <option value="Relevancy">
               <option value="Top Customer Reviews">
               <option value="Highest Price">
@@ -148,7 +148,7 @@
             <input type="radio" name="item" value="type" checked>Anywhere<br><br>
             <input type="radio" name="item" value="type">United States<br><br>
             <input type="radio" name="item" value="type">Custom<br><br>
-            <input class="location" type="text" name="location" placeholder="EnterLocation">
+            <input class="location" type="text" name="location" placeholder="Enter Location">
             </p>
 
 
@@ -167,9 +167,14 @@
             </p>
 
                 <div class="lowhigh">
-                  <input class="low" type="number" name="lowtohigh" value="price" placeholder="Low">
-                  <p>to</p>
-                  <input class="low" type="number" name="lowtohigh" value="price" placeholder="High">
+                  <select class="Low">
+                    <option  value="Low">Low</option>
+                    <option value="High">High</option>
+                  </select>
+                  <select class="Low">
+                    <option  value="High">High</option>
+                    <option value="Low">Low</option>
+                  </select>
                 </div><br>
             <p><b>Ordering options</b></p>
             <p class="text2">
@@ -178,14 +183,14 @@
             </p>
             <p><b>Ship to</b></p>
                 <form action="action" method="get">
-                  <input class="countries" list="browsers" name="ship to" placeholder="UnitedStates">
-                
-                    <option value="Panama">
-                    <option value="Serbia">
-                    <option value="Canada">
-                    <option value="Mexico">
-                    <option value="Russia">
-                 
+                  <select class="countries" >
+                    <option value="United States">United States</option>
+                    <option value="Panama">Panama</option>
+                    <option value="Serbia">Serbia</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Mexico">Mexico</option>
+                    <option value="Russia">Russia</option>
+                    </select>
                 </form>
             
         </aside>

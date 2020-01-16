@@ -89,12 +89,11 @@ body {
   font-size: 15px;
   background: #efefef;
   border: 1px solid #b4b4b4;
+  padding-left: 50px;
 }
 
-::-webkit-input-placeholder {
+::placeholder {
   color: black;
-  word-spacing: 630px;
-  padding-left: 20px;
 }
 
 .etsy {
@@ -167,7 +166,7 @@ p img {
 
 .lowhigh {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .countries {
@@ -184,10 +183,10 @@ p img {
   width: 150px;
   height: 35px;
   border-radius: 5px;
-  margin-left: 30px;
+  text-align: center;
 }
-.low {
-  width: 80px;
+.Low {
+  width: 100px;
   border-radius: 10px;
 }
 
@@ -215,4 +214,8 @@ p img {
   background-position: 0 -58px;
   display: block;
   width: 48%;
+}
+a {
+  text-decoration: none;
+  color: black;
 }
